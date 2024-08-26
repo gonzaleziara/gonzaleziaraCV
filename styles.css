@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: linear-gradient(to bottom, #6cc2ba, #fff);
+}
+
+.caja h3 {
+    width: 300px;
+    height: 50px;
+    background-color: lightpink;
+    padding: 20px;
+    margin: 20px;
+    border: 2pt double palevioletred;
+    box-sizing: border-box;
+}
+
+.botonera {
+    width: 100%;
+    height: 50px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.botonera a {
+    text-decoration: none;
+    font-family: "CascadiaCode";
+    font-size: 12pt;
+    color: #2b534f;
+    background-color: #fff;
+    padding: 10px 60px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.botonera a:hover {
+    transform: scale(1.4);
+    font-weight: bolder;
+    color: white;
+    background-color: #6cc2ba;
+}
+
+.botonera a:active {
+    color: white;
+}
+
+h1 {
+    font-family: "CascadiaCode";
+    font-size: 60pt;
+    color: #fff;
+    font-weight: bold;
+}
+
+.descripcion p {
+    font-family: "Cascadia";
+    font-size: 10pt;
+    color: #2b534f;
+}
+
+@font-face {
+    font-family: "Cascadia";
+    src: url(fonts/CascadiaMono-Regular.otf);
+}
+
+@font-face {
+    font-family: "CascadiaCode";
+    src: url(fonts/CascadiaCode-Regular.otf);
+}
+
+h2 {
+    font-family: "CascadiaCode";
+    font-size: 30pt;
+    color: #fff;
+}
