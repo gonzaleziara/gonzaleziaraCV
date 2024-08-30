@@ -287,7 +287,8 @@ aside {
 
 /* experiencia */
 
-main ul li {
+main ul li,
+main p {
     font-family: "Montserrat";
     font-size: 10pt;
     list-style-type: circle;
@@ -369,8 +370,16 @@ main ul li {
     margin-top: 0;
 }
 
+.columnas {
+    display: flex;
+    justify-content: center;
+    background-color: #6CC2BA;
+}
 
-
+.derecha,
+.izquierda {
+    flex-direction: column;
+}
 
 
 
