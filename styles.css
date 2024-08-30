@@ -2,71 +2,313 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-    background: linear-gradient(to bottom, #6cc2ba, #fff);
+@font-face {
+    font-family: "CascadiaCode";
+    src: url(fonts/CascadiaCode-Light.otf);
 }
 
-.botonera {
-    width: 100%;
-    height: 50px;
+@font-face {
+    font-family: "CascadiaCodeBold";
+    src: url(fonts/CascadiaCode-Bold.otf);
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+.h-index {
+    height: 700px;
+    background-color: #6CC2BA;
+}
+
+.h-sobremi {
+    height: 100px;
+    background-color: #6CC2BA;
 }
 
 nav ul li {
+    list-style-type: none;
     display: inline;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-.botonera a {
+.botonera li a {
     text-decoration: none;
-    font-family: "CascadiaCode";
-    font-size: 12pt;
-    color: #2b534f;
-    background-color: #fff;
-    padding: 10px 60px;
-    border: 1px solid black;
-    border-radius: 15px;
-    transition: transform 0.2s ease;
-}
-
-.botonera a:hover {
-    transform: scale(1.4);
+    font-family: "CascadiaCodeBold";
     font-weight: bolder;
-    color: white;
-    background-color: #6cc2ba;
+    font-size: 15px;
+    color: #fff;
+    padding: 8px 60px;
+    border: 2px solid white;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.botonera a:active {
-    color: white;
+.botonera li a:hover {
+    font-weight: bolder;
+    color: #6cc2ba;
+    background-color: #fff;
 }
 
 h1 {
     font-family: "CascadiaCode";
-    font-size: 60pt;
+    font-size: 150px;
     color: #fff;
+    margin: 0;
+}
+
+.bolder {
+    font-family: "CascadiaCodeBold";
+}
+
+.botonera {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.home {
+    align-self: flex-start;
+    margin-right: auto;
+    padding: 0px 20px;
+ }
+
+ .titular {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
+.smile {
+    padding-top: 35px;
+}
+
+/* MAIN */
+
+main {
+    background-color: #fff;
+}
+
+.flores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.flor {
+    animation: rotate 5s linear infinite;
+ }
+
+ @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+ }
+
+ /*sobre mi */
+
+ .imagen img {
+    width: 400px;
+    border-radius: 50px;
+    transition: transform 0.5s ease;
+    margin-left: 100px;
+ }
+
+ .imagen img:hover {
+    transform: scale(1.1);
+ }
+
+ h2 {
+    font-family: "CascadiaCodeBold";
+    font-size: 35px;
+    color: #000000;
+    margin: 0;
+    border: 2px solid #6CC2BA;
+    border-radius: 50px;
+    text-align: center;
+    width: fit-content;
+    padding: 8px 25px;
+ }
+
+.masinfo {
+    font-family: "CascadiaCodeBold";
+    font-size: 13pt;
+    color: #fff;
+    background-color: #6CC2BA;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 6px 50px;
+    margin-top: 40px;
+    transition: transform 0.5s ease;
+}
+
+.masinfo:hover {
+    transform: scale(1.1);
+}
+
+ .descripcion {
+    font-family: "Montserrat";
+    font-size: 11pt;
+    line-height: 16pt;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    margin-left: 5px;
+    text-align: left;
+ }
+
+.contenedor {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.textodescriptivo {
+    height: 20px;
+    width: 450px;
+    margin-right: 20px;
+}
+
+/* proyectos destacados */
+
+.destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.cont-proyectos {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tituloproyectos {
+    margin-left: 270px;
+    margin-bottom: 10px;
+}
+
+.cont-proyectos img {
+    border-radius: 40px;
+    margin: 30px 8px 60px 8px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
+.cont-proyectos img:hover {
+    transform: scale(1.1);
+    border: 5px solid #6CC2BA;
+}
+
+/* contacto */
+
+.contacto {
+    background-color: #6CC2BA;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto p {
+    font-family: "CascadiaCode";
     font-weight: bold;
-}
-
-.descripcion p {
-    font-family: "Cascadia";
-    font-size: 10pt;
-    color: #2b534f;
-}
-
-@font-face {
-    font-family: "Cascadia";
-    src: url(fonts/CascadiaMono-Regular.otf);
-}
-
-@font-face {
-    font-family: "CascadiaCode";
-    src: url(fonts/CascadiaCode-Regular.otf);
-}
-
-h2 {
-    font-family: "CascadiaCode";
-    font-size: 30pt;
+    font-size: 100px;
     color: #fff;
+    margin-left: 80px;
 }
+
+.contacto img {
+    margin-left: 80px;
+    margin-top: -90px;
+    padding-bottom: 50px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #6CC2BA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 40px;
+    margin: 5px;
+}
+
+.logos-contacto {
+    display: flex;
+    margin-right: 50px;
+}
+
+footer p {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 8pt;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 8px 30px;
+    margin-left: 50px;
+}
+
+/* SOBRE MI PAGE */
+
+h3 {
+    font-family: "CascadiaCode";
+    font-size: 15pt;
+    margin-bottom: -18px;
+}
+
+h4 {
+    font-family: "CascadiaCode";
+    font-size: 12pt;
+}
+
+aside {
+    font-family: "Montserrat";
+    font-size: 11pt;
+}
+
+/* experiencia */
+
+main ul li {
+    font-family: "Montserrat";
+    font-size: 10pt;
+    list-style-type: circle;
+}
+
+.caja {
+    background: #fff;
+    padding: 50px;
+    border-radius: 50px;
+    width: 400px;
+}
+
+.herramientas,
+.educacion,
+.experiencia,
+.song {
+    background: #6CC2BA;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
