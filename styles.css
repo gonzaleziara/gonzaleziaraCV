@@ -148,10 +148,15 @@ main {
     padding: 6px 50px;
     margin-top: 40px;
     transition: transform 0.5s ease;
+
 }
 
 .masinfo:hover {
     transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
 }
 
  .descripcion {
@@ -301,6 +306,67 @@ main ul li {
 .song {
     background: #6CC2BA;
     padding: 20px;
+}
+
+/* PROYECTOS */
+
+.g-proyectos h3 {
+    font-family: "CascadiaCodeBold";
+    font-size: 75pt;
+    color: black;
+}
+
+.info h4 {
+    font-size: 17pt;
+    font-family: "CascadiaCodeBold";
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    line-height: 15pt;
+}
+
+.g-proyectos img {
+    border-radius: 60px;
+    margin: 20px 12px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
+.g-proyectos img:hover {
+    transform: scale(1.08);
+}
+
+.fichatecnica {
+    border: 2px solid #6CC2BA;
+    width: 380px;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.fichatecnica p,
+.italica {
+    font-family: "Montserrat";
+    font-size: 11pt;
+}
+
+.italica {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0px 50px 30px 50px;
+}
+
+.g-titulo h3 {
+    margin-top: 0;
 }
 
 
