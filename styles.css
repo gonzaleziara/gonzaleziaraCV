@@ -17,10 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-main {
-    background-color: #fff;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -35,8 +31,7 @@ nav ul li {
     display: inline;
 }
 
-main ul li,
-main p {
+main ul li, main p {
     font-size: 10pt;
     list-style-type: circle;
 }
@@ -44,13 +39,10 @@ main p {
 footer p {
     font-weight: 600;
     font-size: 8pt;
-    border-radius: 50px;
-    border: 1px solid white;
-    padding: 8px 30px;
-    margin-left: 50px;
+    line-height: 1pt;
 }
 
-h1 {
+h1, header p {
     font-size: 150px;
     color: #fff;
     margin: 0;
@@ -74,60 +66,46 @@ h4 {
     font-size: 12pt;
 }
 
+h5 {
+    font-weight: 400;
+    font-size: 10pt;
+}
+
 /* fonts */
 
-aside,
-main ul li,
-main p,
-.descripcion,
-.fichatecnica p, 
-.italica,
-footer p { 
+h5, main ul li, main p, .descripcion, .fichatecnica p, .italica, footer p { 
     font-family: "Montserrat";
 }
 
-h1,
-h3,
-h4,
-.contacto p {
+h1, h3, h4, .contacto p, header p {
     font-family: "CascadiaCode";
 }
 
-h2,
-.botonera li a,
-.bolder,
-.masinfo,
-.info h4,
-.g-proyectos h3 {
+h2, .botonera li a, .bolder, .masinfo, .info h4, .g-proyectos h3 {
     font-family: "CascadiaCodeBold"
+}
+
+header p {
+    font-weight: 600;
 }
 
 /* color fondo */
 
-.h-index,
-.h-sobremi,
-.herramientas,
-.educacion,
-.experiencia,
-.song,
-.contacto,
-footer,
-.columnas {
+.h-index, .h-sobremi, .herramientas, .educacion, .experiencia, .contacto, footer, .columnas {
     background-color: #6CC2BA;
+}
+
+main, .masinfo, .descripcion {
+    background-color: #fff;
 }
 
 /* animaciones */ 
 
-.imagen img,
-.masinfo,
-.cont-proyectos img,
-.g-proyectos img {
+.imagen img, .masinfo, .cont-proyectos img, .g-proyectos img {
     transition: transform 0.5s ease;
 }
 
-.imagen img:hover,
-.masinfo:hover,
-.cont-proyectos img:hover {
+.imagen img:hover, .masinfo:hover, .cont-proyectos img:hover {
     transform: scale(1.1);
 }
 
@@ -251,8 +229,9 @@ footer,
 }
 
 .tituloproyectos {
-    margin-left: 270px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .cont-proyectos img {
@@ -263,6 +242,10 @@ footer,
 
 .cont-proyectos img:hover {
     border: 5px solid #6CC2BA;
+}
+
+.interlineado p {
+    line-height: 3pt;
 }
 
 /* contacto */
@@ -287,6 +270,13 @@ footer,
 
 /* FOOTER */
 
+.textofooter {
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 5px 30px;
+    margin: 10px 0px 15px 15px;
+}
+
 footer img {
     margin: 5px;
 }
@@ -300,46 +290,46 @@ footer img {
 
 /* experiencia */
 
-.caja1,
-.caja2 {
-    background: #fff;
-    padding: 50px;
-    border-radius: 50px;
-}
-
 .caja1 {
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
 
-.caja1 ul {
+.herramientas ul {
     padding: 0;
     margin: 0;
 }
 
-.caja1 ul li {
-    list-style: none; 
+.herramientas ul li {
+    list-style: none;
 }
 
-.caja1 h3 {
+.herramientas h3 {
     margin-bottom: 10px;
 }
 
-.caja2 {
-        width: 400px;
+.herramientas, .educacion, .experiencia {
+    margin: 20px;
+    background: #fff;
+    padding: 50px;
+    border-radius: 50px;
 }
 
-.herramientas,
-.educacion,
-.experiencia {
-    padding: 20px;
+.educacion, .experiencia {
+    width: 400px;
+}
+
+.herramientas {
+    width: 300px;
+    height: 650px;
 }
 
 /* PROYECTOS */
 
 .g-proyectos h3 {
     font-size: 75pt;
+    margin-top: 0;
 }
 
 .info h4 {
@@ -368,8 +358,7 @@ footer img {
     padding: 20px;
 }
 
-.fichatecnica p,
-.italica {
+.fichatecnica p, .italica {
     font-family: "Montserrat";
     font-size: 11pt;
 }
@@ -385,13 +374,7 @@ footer img {
     margin: 0px 50px 30px 50px;
 }
 
-.g-titulo h3 {
-    margin-top: 0;
-}
-
 .columnas {
     display: flex;
     justify-content: center;
 }
-
-
