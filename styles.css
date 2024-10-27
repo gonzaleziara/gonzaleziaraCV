@@ -71,6 +71,12 @@ h5 {
     font-size: 10pt;
 }
 
+audio {
+    width: 250px;
+    height: 30px;
+}
+
+
 /* fonts */
 
 h5, main ul li, main p, .descripcion, .fichatecnica p, .italica, footer p { 
@@ -158,8 +164,7 @@ main, .masinfo, .descripcion {
 .flores {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin: 20px;
 }
 
 .flor {
@@ -208,7 +213,6 @@ main, .masinfo, .descripcion {
 }
 
 .textodescriptivo {
-    height: 20px;
     width: 450px;
     margin-right: 20px;
 }
@@ -257,14 +261,15 @@ main, .masinfo, .descripcion {
 
 .contacto p {
     font-weight: bold;
-    font-size: 100px;
+    font-size: 70px;
     color: #fff;
     margin-left: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .contacto img {
     margin-left: 80px;
-    margin-top: -90px;
     padding-bottom: 50px;
 }
 
@@ -288,12 +293,22 @@ footer img {
 
 /* SOBRE MI PAGE */
 
-/* experiencia */
+.columnas h2 {
+    font-size: 26px;
+}
 
-.caja1 {
+.columnas h3 {
+    font-size: 13pt;
+}
+
+.caja1, .caja2 {
     display: flex;
     flex-direction: column;
     align-items: center; 
+}
+
+.herramientas img {
+    padding: 5px;
 }
 
 .herramientas ul {
@@ -309,7 +324,12 @@ footer img {
     margin-bottom: 10px;
 }
 
-.herramientas, .educacion, .experiencia {
+.titulo-caja {
+    display: flex;
+    justify-content: center;
+}
+
+.herramientas, .educacion, .experiencia, .song {
     margin: 20px;
     background: #fff;
     padding: 50px;
@@ -322,7 +342,41 @@ footer img {
 
 .herramientas {
     width: 300px;
-    height: 650px;
+    height: fit-content;
+}
+
+.song {
+    width: 300px;
+    height: fit-content;
+}
+
+.educacion h3, .educacion h4, .educacion h5 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.educacion-info {
+    margin-top: 18px; 
+    margin-bottom: 30px;
+}
+
+.reproductor {
+    display: flex;
+}
+
+.reproductor img {
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.titulo-song h4 {
+    margin-bottom: 8px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: white;
+    color: #fff;
 }
 
 /* PROYECTOS */
@@ -378,3 +432,28 @@ footer img {
     display: flex;
     justify-content: center;
 }
+
+/* CONTACTO PAGE */
+
+.p-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.p-contacto h2 {
+    border: none;
+    font-size: 70px;
+    color: #6CC2BA;
+    padding: 0;
+}
+
+.charlemos {
+    display: flex;
+}
+
+.charlemos img {
+    margin-left: 30px;
+}
+
