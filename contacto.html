@@ -26,6 +26,33 @@
                 <h2>charlemos</h2>
                 <img src="img/icons/flor.svg" width="70px" alt="dibujo de flor" class="flor">
             </div>
+            <section>
+                <form method="post" action="mailto:gonzaleziaraazul@gmail.com?subject=quiero charlar! :)" target="_blank " enctype="text/plain">
+                    <div class="linea-form">
+                        <div class="nombre">
+                            <label for="nombre">nombre</label>
+                            <input type="text" name="Nombre" id="Nombre" maxlength="30" required>
+                        </div>
+                            <div class="mail">
+                            <label for="email">email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <label for="tipologia">tipología</label>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="tipologia" value="branding" id="branding">branding</label>
+                        <label><input type="checkbox" name="tipologia" value="motion graphics" id="motion">motion graphics</label>
+                        <label><input type="checkbox" name="tipologia" value="diseño web" id="web">diseño web</label>
+                        <label><input type="checkbox" name="tipologia" value="diseño editorial" id="editorial">diseño editorial</label>
+                        <label><input type="checkbox" name="tipologia" value="otros" id="otros">otros</label>
+                    </div>
+                    <label for="mensaje">mensaje</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                    <div class="enviar">
+                        <input type="submit" name="enviar" class="boton-form" formenctype="text/plain" value="ENVIAR" required>
+                    </div>
+                </form>
+            </section>
         </main>
         <footer>
             <div class="textofooter">

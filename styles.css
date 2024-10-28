@@ -439,7 +439,7 @@ audio::-webkit-media-controls-panel {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+    padding: 35px;
 }
 
 .p-contacto h2 {
@@ -457,3 +457,111 @@ audio::-webkit-media-controls-panel {
     margin-left: 30px;
 }
 
+.checkbox {
+    background-color: #fff;
+    border-radius: 30px;
+    width: 750px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+form {
+    width: 750px;
+    height: auto;
+    background-color: #6CC2BA;
+    padding: 40px;
+    border-radius: 45px;
+    margin-top: 15px;
+}
+
+input[type=text], input[type="email"] {
+    padding: 2px;
+    font-family: "Montserrat";
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    width: 350px;
+    height: 30px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus { 
+    outline: none;
+}
+
+label {
+    font-family: "CascadiaCodeBold";
+    font-size: 15px;
+    color: #6CC2BA;
+    cursor: pointer;
+}
+
+label[for="nombre"], label[for="email"], label[for="mensaje"],label[for="tipologia"] {
+    font-family: "CascadiaCode";    
+    font-size: 18px;
+    color: white;
+}
+
+.linea-form {
+    display: flex;
+    gap: 30px;
+}
+
+textarea {
+    width: 720px;
+    height: 115px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 30px 20px 30px 20px;
+    font-family: "Montserrat";
+}
+
+.enviar {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton-form {
+    font-family: "CascadiaCodeBold";
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 150px;
+    height: 32px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.boton-form:hover {
+    font-family: "CascadiaCodeBold";
+    color: #6CC2BA;
+    background-color: white;
+    border-radius: 30px;
+    width: 150px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* media query */
+
+@media screen and (max-width: 800px) {
+
+    h1, header p {
+        font-size: 100px;
+    }
+
+    .flor {
+        height: 30px;
+        width: 30px;
+    }
+
+}
