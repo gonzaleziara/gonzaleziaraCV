@@ -1,93 +1,155 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>iara! :)</title>
-        <link href="styles.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="img/icons/flor.ico" type="image/x-icon">
-    </head>
-    <body>
-        <header class="h-index">
-            <nav class="botonera">
-                <div class="home">
-                    <a href="index.html"><img src="img/icons/home.svg" width="35px" alt="icono de casa"></a>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="sobremi.html">SOBRE MI</a></li>
-                        <li><a href="#proyectos">PROYECTOS</a></li>
-                        <li><a href="contacto.html">CONTACTO</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="titular">
-                <div>
-                    <p>hola!</p>
-                    <h1>soy <span class="bolder">iara</span></h1>
-                    <img src="img/icons/smile.svg" class="smile" width="200px" alt="dibujo de sonrisa">
-                </div>
+
+<head>
+    <meta charset="utf-8" />
+    <title>iara! :)</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/icons/flor.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="h-index">
+        <nav class="botonera">
+            <div class="home">
+                <a href="index.html"><img src="img/icons/home.svg" width="35px" alt="icono de casa"></a>
             </div>
-        </header>
-        <main>
-            <section class="flores">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-            </section>
-            <section class="contenedor">
-                <div class="textodescriptivo">
-                    <h2 id="sobremi">sobre mi!</h2>
-                    <article class="descripcion">    
-                        <p>Soy Iara González. Actuamente me desempeño como Customer Support Team Lead en Prex y como estudiante de Diseño y Comunicación Social en la Universidad de Lanús. Desde joven me apasiona el diseño y tengo conocimientos avanzados en Adobe Illustrator, Photoshop, InDesign y After Effects, con deseos de seguir aprendiendo nuevas herramientas.</p>
-                        <p>Me gusta adquirir nuevos conocimientos constantemente y soy disciplinada, resolutiva y también muy auto-crítica. Tengo experiencia en trabajo en equipo y puedo trabajar de manera individual o conjunta.</p>
-                        <p>Siempre busco oportunidades para ganar experiencia en el diseño y ampliar mi portfolio. ¡Gracias por leerme!</p>
-                        <a href="sobremi.html"><p class="masinfo">conocé más! →</p></a>
-                    </article>
-                </div>
-                <div class="imagen">
-                    <img src="img/foto-cv.JPG" width="400px" height="488px" alt="imagen iara">
-                </div>
-            </section>
-            <section class="destacados">
-                <div class="tituloproyectos">
-                    <h2 id="proyectos">proyectos destacados</h2>
+<!-- botonera mobile -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-hamburguesa">
+                <img src="img/icons/menu-hamburguesa.svg" width="35px" alt="menu hamburguesa">
+            </label>
+<!-- botonera web -->
+            <div class="menu">
+                <ul>
+                    <li><a href="sobremi.html">SOBRE MI</a></li>
+                    <li><a href="#proyectos">PROYECTOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+        </nav>
+<!-- titulo header web -->
+        <div class="titular">
+            <div class="desaparecer">
+                <p>hola!</p>
+                <h1>soy <span class="bolder">iara</span></h1>
+                <img src="img/icons/smile.svg" class="smile" width="200px" alt="dibujo de sonrisa">
+            </div>
+        </div>
+<!-- titulo header mobile -->
+        <div class="titular full-desaparecer">
+            <div class>
+                <p>hola!</p>
+                <h1>soy <span class="bolder"><br>iara</span></h1>
+                <img src="img/icons/smile.svg" class="smile" width="200px" alt="dibujo de sonrisa">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="flores">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor desaparecer">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor desaparecer">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor desaparecer">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
+        </section>
+<!-- sobre mi web -->
+        <section class="contenedor desaparecer">
+            <div class="textodescriptivo">
+                <h2 id="sobremi">sobre mi!</h2>
+                <article class="descripcion">
+                    <p>Soy Iara González. Actuamente me desempeño como Customer Support Team Lead en Prex y como
+                        estudiante de Diseño y Comunicación Social en la Universidad de Lanús. Desde joven me apasiona
+                        el diseño y tengo conocimientos avanzados en Adobe Illustrator, Photoshop, InDesign y After
+                        Effects, con deseos de seguir aprendiendo nuevas herramientas.</p>
+                    <p>Me gusta adquirir nuevos conocimientos constantemente y soy disciplinada, resolutiva y también
+                        muy auto-crítica. Tengo experiencia en trabajo en equipo y puedo trabajar de manera individual o
+                        conjunta.</p>
+                    <p>Siempre busco oportunidades para ganar experiencia en el diseño y ampliar mi portfolio. ¡Gracias
+                        por leerme!</p>
+                    <a href="sobremi.html">
+                        <p class="masinfo">conocé más! →</p>
+                    </a>
+                </article>
+            </div>
+            <div class="imagen">
+                <img src="img/foto-cv.JPG" width="400px" height="488px" alt="imagen iara">
+            </div>
+        </section>
+<!-- sobre mi mobile -->
+        <section class="contenedor-mobile full-desaparecer imagen">
+            <div class="textodescriptivo">
+                <h2>sobre mi!</h2>
+            </div>
+            <img src="img/foto-cv.JPG" alt="">
+            <p>Apasionada por el diseño, con experiencia en Adobe Illustrator, Photoshop, InDesign y After Effects. Disciplinada, resolutiva y orientada al trabajo en equipo. Busco oportunidades para aprender y ampliar mi portfolio.</p>
+            <a href="sobremi.html" class="masinfo">conocé más! →</a>
+        </section>
+<!-- proyectos destacados web -->
+        <section class="destacados desaparecer">
+            <div class="tituloproyectos desaparecer">
+                <h2 id="proyectos">proyectos destacados</h2>
                 <div class="cont-proyectos">
-                    <a href="jackdavison.html"><img src="img/jack-davison.jpg" width="250px" alt="Libro sobre el fotográfo Jack Davison"></a>
-                    <a href="musicalatina.html"><img src="img/musica-latina.jpg" width="250px" alt="Afiches del festival Música Latina"></a>
-                    <a href="wicca.html"><img src="img/wicca.jpg" width="250px" alt="Logotipo del mercado estotérico Wicca"></a>
-                    <a href="fallenangels.html"><img src="img/fallen-angels.jpg" width="250px" alt="Poster de la película Fallen Angels"></a>
+                    <a href="jackdavison.html"><img src="img/jack-davison.jpg" width="250px"
+                            alt="Libro sobre el fotográfo Jack Davison"></a>
+                    <a href="musicalatina.html"><img src="img/musica-latina.jpg" width="250px"
+                            alt="Afiches del festival Música Latina"></a>
+                    <a href="wicca.html"><img src="img/wicca.jpg" width="250px"
+                            alt="Logotipo del mercado estotérico Wicca"></a>
+                    <a href="fallenangels.html"><img src="img/fallen-angels.jpg" width="250px"
+                            alt="Poster de la película Fallen Angels"></a>
                 </div>
             </div>
-            </section>
-            <section class="flores">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-                <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
-            </section>
-            <section class="contacto">
-                <p>y si charlamos?</p>
-                <a href="mailto:gonzaleziaraazul@gmail.com"><img src="img/icons/mail.svg" width="130px" alt="correo"></a>
-            </section>
-        </main>
-        <footer>
-            <div class="textofooter">
-                <p>Página diseñada en el marco de la materia Computación III, </p><p>Universidad Nacional de Lanús. Todos los derechos reservados, 2024.</p>
+        </section>
+<!-- proyectos destacados mobile -->
+        <section class="destacados full-desaparecer">
+            <div>
+                <h2 id="proyectos">proyectos destacados</h2>
+                <div class="cont-proyectos">
+                    <div>
+                        <a href="jackdavison.html"><img src="img/jack-davison.jpg" width="200px" alt="Libro sobre el fotográfo Jack Davison"></a>
+                        <a href="musicalatina.html"><img src="img/musica-latina.jpg" width="200px" alt="Afiches del festival Música Latina"></a>
+                    </div>
+                    <div>
+                        <a href="wicca.html"><img src="img/wicca.jpg" width="200px" alt="Logotipo del mercado estotérico Wicca"></a>
+                        <a href="fallenangels.html"><img src="img/fallen-angels.jpg" width="200px" alt="Poster de la película Fallen Angels"></a>
+                    </div>
+                </div>
             </div>
-            <div class="logos-contacto" id="contacto">
-                <a href="https://www.behance.net/gonzaleziara" target="_blank"><img src="img/icons/behance.svg" width="40px" alt="logo behance"></a>
-                <a href="https://www.instagram.com/iargonzalez" target="_blank"><img src="img/icons/instagram.svg" width="40px" alt="logo instagram"></a>
-                <a href="https://www.linkedin.com/in/gonzaleziara/" target="_blank"><img src="img/icons/linkedin.svg" width="40px" alt="logo linkedin"></a>
-            </div>
-        </footer>
-    </body>
+        </section>
+<!-- fin proyectos destacados mobile -->
+        <section class="flores">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor desaparecer">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor desaparecer">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor desaparecer">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
+            <img src="img/icons/flor.svg" height="50px" alt="flor" class="flor">
+        </section>
+        <section class="contacto">
+            <a href="contacto.html"><p>y si charlamos?</p></a>
+            <a href="mailto:gonzaleziaraazul@gmail.com"><img src="img/icons/mail.svg" width="130px" alt="correo"></a>
+        </section>
+    </main>
+    <footer>
+        <div class="textofooter">
+            <p>Página diseñada en el marco de la materia Computación III, </p>
+            <p>Universidad Nacional de Lanús. Todos los derechos reservados, 2024.</p>
+        </div>
+        <div class="logos-contacto" id="contacto">
+            <a href="https://www.behance.net/gonzaleziara" target="_blank"><img src="img/icons/behance.svg" width="40px"
+                    alt="logo behance"></a>
+            <a href="https://www.instagram.com/iargonzalez" target="_blank"><img src="img/icons/instagram.svg"
+                    width="40px" alt="logo instagram"></a>
+            <a href="https://www.linkedin.com/in/gonzaleziara/" target="_blank"><img src="img/icons/linkedin.svg"
+                    width="40px" alt="logo linkedin"></a>
+        </div>
+    </footer>
+</body>
+
 </html>
