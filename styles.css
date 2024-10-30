@@ -432,6 +432,63 @@ audio::-webkit-media-controls-panel {
     justify-content: center;
 }
 
+/* galeria */
+
+#galeria {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	height: 100vh;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+
+#galeria-oculta {
+	display: flex;
+	width: 100%;
+	max-width: 1450px;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.fraccion-galeria {
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1366px;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 2%;
+}
+
+.primer-ultima-flecha {
+    visibility: hidden;
+}
+
+/* imágenes galeria */
+
+#foto-1 {
+	background-image: url("img/jack-davison/jack-davison-apertura.jpg");
+}
+
+#foto-2 {
+	background-image: url("img/jack-davison/jack-davison-linea.jpg")
+}
+
+#foto-3 {
+	background-image:url("img/jack-davison/jack-davison-catalogo.jpg");
+}
+
 /* CONTACTO PAGE */
 
 .p-contacto {
@@ -551,6 +608,14 @@ textarea {
 }
 
 .menu-toggle {
+    display: none;
+}
+
+.menu-hamburguesa {
+    display: none;
+}
+
+.desaparecer {
     display: none;
 }
 
@@ -717,15 +782,4 @@ textarea {
         margin: 5px 0px;
     }
     
-}
-
-@media screen and (min-width: 801px) {
-
-    .menu-hamburguesa {
-        display: none;
-    }
-
-    .full-desaparecer {
-        display: none;
-    }
 }

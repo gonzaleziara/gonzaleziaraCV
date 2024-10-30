@@ -5,6 +5,17 @@
         <title>iara! :)</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="img/icons/flor.ico" type="image/x-icon">
+        <script>
+			function cambiarDisplay(visibilidadNueva){
+				document.getElementById("galeria").style.display = visibilidadNueva
+			}
+			function mostrarGaleria(){
+				cambiarDisplay('flex')
+			}
+			function ocultarGaleria(){
+				cambiarDisplay('none')
+			}
+	</script>
     </head>
     <body>
         <header class="h-sobremi">
@@ -24,10 +35,10 @@
         <main>
             <section class="carrusel">
                 <div class="g-proyectos">
-                    <div class="galeria">
-                        <img src="img/jack-davison/jack-davison-apertura.jpg" width="350px" alt="Apertura del libro del fotográfo Jack Davison">
-                        <img src="img/jack-davison/jack-davison-linea.jpg" width="350px" alt="Línea de tiempo de los proyectos del fotográfo Jack Davison">
-                        <img src="img/jack-davison/jack-davison-catalogo.jpg" width="350px" alt="Catalógo de fotografías">
+                    <div class="galeria" id="miniaturas">
+                        <a href="#foto-1"><img src="img/jack-davison/jack-davison-apertura.jpg" width="350px" alt="Apertura del libro del fotográfo Jack Davison" onClick="mostrarGaleria()"></a>
+                        <a href="#foto-2"><img src="img/jack-davison/jack-davison-linea.jpg" width="350px" alt="Línea de tiempo de los proyectos del fotográfo Jack Davison" onClick="mostrarGaleria()"></a>
+                        <a href="#foto-3"><img src="img/jack-davison/jack-davison-catalogo.jpg" width="350px" alt="Catalógo de fotografías" onClick="mostrarGaleria()"></a>
                     </div>
                     <article class="info">
                         <div class="g-titulo">
@@ -45,7 +56,27 @@
                         </div>
                     </article>
                 </div> 
-            </section>   
+            </section>
+            <section id="galeria">
+                <div id="fondo-galeria"></div>
+                <ul id="galeria-oculta">
+                        <li class="fraccion-galeria" id="foto-1">
+                                <a href="#" class="primer-ultima-flecha"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior"></a>
+                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                                <a href="#foto-2"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                        <li class="fraccion-galeria" id="foto-2">
+                                <a href="#foto-1"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior"></a>
+                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                                <a href="#foto-3"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                        <li class="fraccion-galeria" id="foto-3">
+                                <a href="#foto-2"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior"></a>
+                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                                <a href="#" class="primer-ultima-flecha"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                </ul>
+        </section>   
         </main>
         <footer>
             <div class="textofooter">
