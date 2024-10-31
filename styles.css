@@ -678,7 +678,7 @@ textarea {
 	bottom: 0%;
 	right: 0;
     margin-right: 32px;
-    transform: translateY(-80%);
+    transform: translateY(-100%);
 	background-color: #6CC2BA; 
 	padding: 10px;
     border-radius: 100px;
