@@ -5,6 +5,17 @@
         <title>iara! :)</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="img/icons/flor.ico" type="image/x-icon">
+        <script>
+			function cambiarDisplay(visibilidadNueva){
+				document.getElementById("galeria").style.display = visibilidadNueva
+			}
+			function mostrarGaleria(){
+				cambiarDisplay('flex')
+			}
+			function ocultarGaleria(){
+				cambiarDisplay('none')
+			}
+	</script>
     </head>
     <body>
         <header class="h-sobremi">
@@ -24,9 +35,9 @@
         <main>
             <section class="g-proyectos">
                 <div class="galeria">
-                    <img src="img/wicca/wicca-afiches.jpg" width="400px" alt="Afiches promocionales del mercado esotérico Wicca">
-                    <img src="img/wicca/wicca-instagram.jpg" width="400px" alt="Feed de Instagram del mercado esotérico Wicca">
-                    <img src="img/wicca/wicca-merch.jpg" width="400px" alt="Buzos de merch del mercado esotérico Wicca">
+                    <a href="#foto-7"><img src="img/wicca/wicca-afiches.jpg" width="400px" alt="Afiches promocionales del mercado esotérico Wicca" onClick="mostrarGaleria()"></a>
+                    <a href="#foto-8"><img src="img/wicca/wicca-instagram.jpg" width="400px" alt="Feed de Instagram del mercado esotérico Wicca" onClick="mostrarGaleria()"></a>
+                    <a href="#foto-9"><img src="img/wicca/wicca-merch.jpg" width="400px" alt="Buzos de merch del mercado esotérico Wicca" onClick="mostrarGaleria()"></a>
                 </div>
                 <article class="info">
                     <div class="g-titulo">
@@ -43,7 +54,27 @@
                             <p>creación de la identidad visual de un mercado, en este caso, un mercado esóterico</p>
                     </div>
                 </article>
-            </section>    
+            </section>
+            <section id="galeria">
+                <div id="fondo-galeria"></div>
+                <ul id="galeria-oculta">
+                        <li class="fraccion-galeria" id="foto-7">
+                                <a href="#" class="primer-ultima-flecha"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior" class="anterior"></a>
+                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
+                                <a href="#foto-8"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                        <li class="fraccion-galeria" id="foto-8">
+                                <a href="#foto-7"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior"></a>
+                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
+                                <a href="#foto-9"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                        <li class="fraccion-galeria" id="foto-9">
+                                <a href="#foto-8"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior"></a>
+                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
+                                <a href="#" class="primer-ultima-flecha"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                </ul>
+        </section>           
         </main>
         <footer>
             <div class="textofooter">

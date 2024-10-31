@@ -5,6 +5,17 @@
         <title>iara! :)</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="img/icons/flor.ico" type="image/x-icon">
+        <script>
+			function cambiarDisplay(visibilidadNueva){
+				document.getElementById("galeria").style.display = visibilidadNueva
+			}
+			function mostrarGaleria(){
+				cambiarDisplay('flex')
+			}
+			function ocultarGaleria(){
+				cambiarDisplay('none')
+			}
+	</script>
     </head>
     <body>
         <header class="h-sobremi">
@@ -23,10 +34,10 @@
         </header>
         <main>
             <section class="g-proyectos">
-                <div class="galeria">
-                    <img src="img/musica-latina/musica-latina-desplegable.jpg" width="400px" alt="Folleto desplegable de festival de música latina">
-                    <img src="img/musica-latina/musica-latina-staff.jpg" width="400px" alt="Tarjeta de staff del festival de música latina">
-                    <img src="img/musica-latina/musica-latina-disco.jpg" width="400px" alt="Disco de música del festival de música latino">
+                <div class="galeria" id="miniaturas">
+                    <a href="#foto-4"><img src="img/musica-latina/musica-latina-desplegable.jpg" width="400px" alt="Folleto desplegable de festival de música latina" onClick="mostrarGaleria()"></a>
+                    <a href="#foto-5"><img src="img/musica-latina/musica-latina-staff.jpg" width="400px" alt="Tarjeta de staff del festival de música latina" onClick="mostrarGaleria()"></a>
+                    <a href="#foto-6"><img src="img/musica-latina/musica-latina-disco.jpg" width="400px" alt="Disco de música del festival de música latino" onClick="mostrarGaleria()"></a>
                 </div>
                 <article class="info">
                     <div class="g-titulo">
@@ -43,7 +54,27 @@
                             <p>creación de un lettering, que posteriormente de vida a la identidad de un festiva, en este caso, de música latina.</p>
                     </div>
                 </article>
-            </section>    
+            </section>
+            <section id="galeria">
+                <div id="fondo-galeria"></div>
+                <ul id="galeria-oculta">
+                        <li class="fraccion-galeria" id="foto-4">
+                                <a href="#" class="primer-ultima-flecha"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior" class="anterior"></a>
+                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
+                                <a href="#foto-5"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                        <li class="fraccion-galeria" id="foto-5">
+                                <a href="#foto-4"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior"></a>
+                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
+                                <a href="#foto-6"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                        <li class="fraccion-galeria" id="foto-6">
+                                <a href="#foto-5"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior"></a>
+                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
+                                <a href="#" class="primer-ultima-flecha"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                </ul>
+        </section>       
         </main>
         <footer>
             <div class="textofooter">

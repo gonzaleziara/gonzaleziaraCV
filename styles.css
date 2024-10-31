@@ -31,6 +31,7 @@ nav ul li {
     display: inline;
 }
 
+
 main ul li, main p {
     font-size: 10pt;
     list-style-type: circle;
@@ -111,7 +112,7 @@ main, .masinfo, .descripcion {
     transition: transform 0.5s ease;
 }
 
-.imagen img:hover, .masinfo:hover, .cont-proyectos img:hover {
+.imagen img:hover, .masinfo:hover, .cont-proyectos img:hover, .fraccion-galeria img:hover {
     transform: scale(1.1);
 }
 
@@ -440,13 +441,12 @@ audio::-webkit-media-controls-panel {
 	justify-content: center;
 	height: 100vh;
 	background-color: white;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	z-index: 10;
 }
 
 #galeria-oculta {
-	display: flex;
 	width: 100%;
 	max-width: 1450px;
 	overflow: hidden;
@@ -460,9 +460,17 @@ audio::-webkit-media-controls-panel {
 	background-position: center;
 	background-size: contain;
 	width: 100%;
-	min-width: 1366px;
+	min-width: 1200px;
 	height: 100vh;
-	justify-content: space-between;
+	justify-content: space-around;
+}
+
+.fraccion-galeria a:first-child {
+    margin-right: 400px;
+}
+
+.fraccion-galeria a:last-child {
+    margin-left: 400px;
 }
 
 .close {
@@ -475,18 +483,64 @@ audio::-webkit-media-controls-panel {
     visibility: hidden;
 }
 
+.fraccion-galeria img {
+    filter: hue-rotate(0deg) saturate(100%) brightness(100%);
+    transition: filter 0.4s ease, transform 0.5s ease;
+    cursor: pointer;
+}
+
+.fraccion-galeria img:hover {
+    filter: hue-rotate(60deg) saturate(130%) brightness(70%)
+}
+
 /* imágenes galeria */
 
 #foto-1 {
-	background-image: url("img/jack-davison/jack-davison-apertura.jpg");
+	background-image: url("img/jack-davison/jack-davison-apertura-galeria.jpg");
 }
 
 #foto-2 {
-	background-image: url("img/jack-davison/jack-davison-linea.jpg")
+	background-image: url("img/jack-davison/jack-davison-linea-galeria.jpg")
 }
 
 #foto-3 {
-	background-image:url("img/jack-davison/jack-davison-catalogo.jpg");
+	background-image:url("img/jack-davison/jack-davison-catalogo-galeria.jpg");
+}
+
+#foto-4 {
+    background-image:url("img/musica-latina/musica-latina-desplegable.jpg");
+}
+
+#foto-5 {
+    background-image:url("img/musica-latina/musica-latina-staff.jpg");
+}
+
+#foto-6 {
+    background-image:url("img/musica-latina/musica-latina-disco.jpg");
+}
+
+#foto-7 {
+    background-image:url("img/wicca/wicca-afiches.jpg");
+}
+
+#foto-8 {
+    background-image:url("img/wicca/wicca-instagram.jpg");
+}
+
+#foto-9 {
+    background-image:url("img/wicca/wicca-merch.jpg");
+}
+
+#foto-10 {
+    background-image:url("img/fallen-angels/fallen-angels-cigarrillo.jpg");
+}
+
+#foto-11 {
+    background-image:url("img/fallen-angels/fallen-angels-jeringa.jpg");
+}
+
+#foto-12 {
+    background-image:url("img/fallen-angels/fallen-angels-telefono.jpg");
 }
 
 /* CONTACTO PAGE */
@@ -615,16 +669,32 @@ textarea {
     display: none;
 }
 
-.desaparecer {
+.full-desaparecer {
     display: none;
+}
+
+.boton-fijo {
+	position: fixed;
+	bottom: 0%;
+	right: 0;
+    margin-right: 32px;
+    transform: translateY(-80%);
+	background-color: #6CC2BA; 
+	padding: 10px;
+    border-radius: 100px;
+	z-index: 70;
 }
 
 /* media query */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
     .desaparecer {
         display: none;
+    }
+
+    .full-desaparecer {
+        display: block;
     }
 
     h1, header p {
@@ -659,7 +729,7 @@ textarea {
         left: 0;
         margin-top: 70px;
         width: 100vw;
-        height: 70vh;
+        height: 90vh;
         background-color:#6CC2BA;
         text-align: center;
         }
@@ -684,7 +754,7 @@ textarea {
     }
 
     .flor {
-        height: 4vh;
+        height: 5vh;
     }
 
     .textodescriptivo {
@@ -731,6 +801,11 @@ textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+    
+    .destacados-titulo {
+        display: flex;
         justify-content: center;
     }
 
