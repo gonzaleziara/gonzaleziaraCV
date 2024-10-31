@@ -1,90 +1,109 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>iara! :)</title>
-        <link href="styles.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="img/icons/flor.ico" type="image/x-icon">
-        <script>
-			function cambiarDisplay(visibilidadNueva){
-				document.getElementById("galeria").style.display = visibilidadNueva
-			}
-			function mostrarGaleria(){
-				cambiarDisplay('flex')
-			}
-			function ocultarGaleria(){
-				cambiarDisplay('none')
-			}
-	</script>
-    </head>
-    <body>
-        <header class="h-sobremi">
-            <nav class="botonera">
-                <div class="home">
-                    <a href="index.html"><img src="img/icons/home.svg" width="35px" alt="icono de casa"></a>
-                </div>
-                <div class="botones">
-                    <ul>
-                        <li><a href="sobremi.html">SOBRE MI</a></li>
-                        <li><a href="index.html#proyectos">PROYECTOS</a></li>
-                        <li><a href="index.html#contacto">CONTACTO</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section class="g-proyectos">
-                    <div class="galeria" id="miniaturas">
-                        <a href="#foto-1"><img src="img/jack-davison/jack-davison-apertura.jpg" width="400px" alt="Apertura del libro del fotográfo Jack Davison" onClick="mostrarGaleria()"></a>
-                        <a href="#foto-2"><img src="img/jack-davison/jack-davison-linea.jpg" width="400px" alt="Línea de tiempo de los proyectos del fotográfo Jack Davison" onClick="mostrarGaleria()"></a>
-                        <a href="#foto-3"><img src="img/jack-davison/jack-davison-catalogo.jpg" width="400px" alt="Catalógo de fotografías" onClick="mostrarGaleria()"></a>
-                    </div>
-                    <article class="info">
-                        <div class="g-titulo">
-                            <h3 id="jackdavison">jack davison</h3>
-                            <a href="https://www.behance.net/gallery/180233429/la-alquimia-de-la-fotografia-diseno-editorial" target="_blank"><p class="masinfo">proyecto completo! →</p></a>
-                        </div>
-                        <div class="fichatecnica">
-                            <h4>ficha técnica:</h4>
-                                <p class="italica">proyecto individual editorial.</p>
-                                <div class="interlineado">
-                                    <p>para: espacio tipográfico III.</p>
-                                    <p>segundo cuatrimestre 2024</p>
-                                </div>
-                                <p>creación de un cátalogo de artista, en este caso, el fotográfo Jack Davison.</p>
-                        </div>
-                    </article>
-            </section>
-            <section id="galeria">
-                <div id="fondo-galeria"></div>
-                <ul id="galeria-oculta">
-                        <li class="fraccion-galeria" id="foto-1">
-                                <a href="#" class="primer-ultima-flecha"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior" class="anterior"></a>
-                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
-                                <a href="#foto-2"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
-                        </li>
-                        <li class="fraccion-galeria" id="foto-2">
-                                <a href="#foto-1"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior"></a>
-                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
-                                <a href="#foto-3"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
-                        </li>
-                        <li class="fraccion-galeria" id="foto-3">
-                                <a href="#foto-2"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior"></a>
-                                <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
-                                <a href="#" class="primer-ultima-flecha"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
-                        </li>
+
+<head>
+    <meta charset="utf-8" />
+    <title>iara! :)</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/icons/flor.ico" type="image/x-icon">
+    <script>
+        function cambiarDisplay(visibilidadNueva) {
+            document.getElementById("galeria").style.display = visibilidadNueva
+        }
+        function mostrarGaleria() {
+            cambiarDisplay('flex')
+        }
+        function ocultarGaleria() {
+            cambiarDisplay('none')
+        }
+    </script>
+</head>
+
+<body>
+    <header class="h-sobremi">
+        <nav class="botonera">
+            <div class="home">
+                <a href="index.html"><img src="img/icons/home.svg" width="35px" alt="icono de casa"></a>
+            </div>
+            <div class="botones">
+                <ul>
+                    <li><a href="sobremi.html">SOBRE MI</a></li>
+                    <li><a href="index.html#proyectos">PROYECTOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
-        </section>   
-        </main>
-        <footer>
-            <div class="textofooter">
-                <p>Página diseñada en el marco de la materia Computación III, </p><p>Universidad Nacional de Lanús. Todos los derechos reservados, 2024.</p>
             </div>
-            <div class="logos-contacto" id="contacto">
-                <a href="https://www.behance.net/gonzaleziara" target="_blank"><img src="img/icons/behance.svg" width="40px" alt="logo behance"></a>
-                <a href="https://www.instagram.com/iargonzalez" target="_blank"><img src="img/icons/instagram.svg" width="40px" alt="logo instagram"></a>
-                <a href="https://www.linkedin.com/in/gonzaleziara/" target="_blank"><img src="img/icons/linkedin.svg" width="40px" alt="logo linkedin"></a>
+        </nav>
+    </header>
+    <main>
+        <section class="g-proyectos">
+            <div class="galeria" id="miniaturas">
+                <a href="#foto-1"><img src="img/jack-davison/jack-davison-apertura.jpg" width="400px"
+                        alt="Apertura del libro del fotográfo Jack Davison" onClick="mostrarGaleria()"></a>
+                <a href="#foto-2"><img src="img/jack-davison/jack-davison-linea.jpg" width="400px"
+                        alt="Línea de tiempo de los proyectos del fotográfo Jack Davison"
+                        onClick="mostrarGaleria()"></a>
+                <a href="#foto-3"><img src="img/jack-davison/jack-davison-catalogo.jpg" width="400px"
+                        alt="Catalógo de fotografías" onClick="mostrarGaleria()"></a>
             </div>
-        </footer>
-    </body>
+            <article class="info">
+                <div>
+                    <h3 id="jackdavison">jack davison</h3>
+                    <a href="https://www.behance.net/gallery/180233429/la-alquimia-de-la-fotografia-diseno-editorial"
+                        target="_blank">
+                        <p class="masinfo">proyecto completo! →</p>
+                    </a>
+                </div>
+                <div class="fichatecnica">
+                    <h4>ficha técnica:</h4>
+                    <p class="italica">proyecto individual editorial.</p>
+                    <div class="interlineado">
+                        <p>para: espacio tipográfico III.</p>
+                        <p>segundo cuatrimestre 2024</p>
+                    </div>
+                    <p>creación de un cátalogo de artista, en este caso, el fotográfo Jack Davison.</p>
+                </div>
+            </article>
+        </section>
+        <section id="galeria">
+            <div id="fondo-galeria"></div>
+            <ul id="galeria-oculta">
+                <li class="fraccion-galeria" id="foto-1">
+                    <a href="#" class="primer-ultima-flecha"><img src="img/icons/flecha-izq.svg" width="50px"
+                            height="50px" alt="Anterior" class="anterior"></a>
+                    <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-2"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                </li>
+                <li class="fraccion-galeria" id="foto-2">
+                    <a href="#foto-1"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior"></a>
+                    <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-3"><img src="img/icons/flecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                </li>
+                <li class="fraccion-galeria" id="foto-3">
+                    <a href="#foto-2"><img src="img/icons/flecha-izq.svg" width="50px" height="50px" alt="Anterior"></a>
+                    <img class="close" src="img/icons/cerrar.svg" alt="Cerrar" width="30px" height="30px"
+                        onClick="ocultarGaleria()">
+                    <a href="#" class="primer-ultima-flecha"><img src="img/icons/flecha.svg" width="50px" height="50px"
+                            alt="Siguiente"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="textofooter">
+            <p>Página diseñada en el marco de la materia Computación III, </p>
+            <p>Universidad Nacional de Lanús. Todos los derechos reservados, 2024.</p>
+        </div>
+        <div class="logos-contacto" id="contacto">
+            <a href="https://www.behance.net/gonzaleziara" target="_blank"><img src="img/icons/behance.svg" width="40px"
+                    alt="logo behance"></a>
+            <a href="https://www.instagram.com/iargonzalez" target="_blank"><img src="img/icons/instagram.svg"
+                    width="40px" alt="logo instagram"></a>
+            <a href="https://www.linkedin.com/in/gonzaleziara/" target="_blank"><img src="img/icons/linkedin.svg"
+                    width="40px" alt="logo linkedin"></a>
+        </div>
+    </footer>
+</body>
+
 </html>
